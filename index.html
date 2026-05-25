@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Referral Saya</title>
+    <title>Landing Page Responsif</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; justify-content: center; align-items: center; height: 100vh; color: #333; }
-        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); text-align: center; max-width: 400px; width: 90%; }
-        h1 { font-size: 24px; color: #4a148c; margin-bottom: 10px; }
-        p { color: #666; font-size: 16px; margin-bottom: 25px; line-height: 1.5; }
-        .btn { display: inline-block; background: #764ba2; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3); }
-        .btn:hover { background: #5a328a; transform: translateY(-2px); }
+        
+        /* ======================================================= */
+        /* 1. TAMPILAN DEFAULT: JIKA DIBUKA DI LAPTOP / PC / TABLET */
+        /* ======================================================= */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #ffffff; /* Latar belakang situs PUTIH */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            color: #333333; /* Tulisan abu-abu gelap */
+        }
+        .card { 
+            background: #f5f5f5; /* Kartu abu-abu sangat muda */
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            text-align: center; 
+            max-width: 400px; 
+            width: 90%; 
+        }
+        h1 { font-size: 24px; color: #111111; margin-bottom: 10px; }
+        p { color: #555555; font-size: 16px; margin-bottom: 25px; line-height: 1.5; }
+        .btn { 
+            display: inline-block; 
+            background: #111111; 
+            color: #ffffff; 
+            padding: 12px 30px; 
+            border-radius: 25px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+        .btn:hover { background: #444444; }
+
+        /* ======================================================= */
+        /* 2. TAMPILAN KHUSUS: JIKA DIBUKA DI MOBILE / HP (< 768px)*/
+        /* ======================================================= */
+        @media (max-width: 767px) {
+            body { 
+                background: #121212; /* Latar belakang situs HITAM */
+                color: #ffffff; /* Tulisan berubah jadi PUTIH */
+            }
+            .card { 
+                background: #1e1e1e; /* Kartu hitam pekat */
+                box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+            }
+            h1 { color: #ffffff; }
+            p { color: #bbbbbb; }
+            .btn { 
+                background: #ffffff; 
+                color: #121212; 
+            }
+            .btn:hover { background: #eeeeee; }
+        }
     </style>
 </head>
 <body>
@@ -20,7 +70,6 @@
         <p>Klik tombol di bawah ini untuk langsung menuju ke situs resmi melalui link referral saya dan dapatkan bonusnya!</p>
         
         <a href="https://gajian123.forum/account/register/192531007" target="_blank" class="btn">Kunjungi Situs</a>
-        
     </div>
 </body>
 </html>
